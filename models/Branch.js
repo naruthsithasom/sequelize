@@ -4,11 +4,12 @@ module.exports = (sequelize, Datatypes) => {
       type: Datatypes.STRING(255)
     },
       size: {
-        type: Datatypes.STRING(2)
+        type: Datatypes.STRING(40)
       }
     },
     {
-      tableNmae: 'branches'
+      tableName: 'branches',
+      timestamps: false
   })
 
 //สร้างสัมพันธ์ Manager กับ Branch
